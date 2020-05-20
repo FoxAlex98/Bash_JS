@@ -1,0 +1,56 @@
+.bash_body {
+    position: absolute;
+    background-color: black;
+    width: 1000px;
+    height: 500px;
+    left: 500px;
+    top:100px;
+    opacity: 80%;
+}
+
+.bash{
+    position: relative;
+    height: 95%;
+    top: 5px;
+    overflow-y: scroll;
+}
+
+.bash_bar{
+    background-color: lightgreen;
+    width: 100%;
+    height: 5%;
+}
+
+.cross {
+    
+}
+
+.square {
+
+}
+
+.under {
+
+}
+
+p{
+    color: lightgreen;
+}
+
+input{
+    background-color: black;
+    color: lightgreen;
+    border: none;
+    width: 70%;
+}
+
+input:focus{
+    background-color: black;
+    color: lightgreen;
+    border: none;
+    outline:none;
+}
+
+span{
+    color: #ffffff;
+}
