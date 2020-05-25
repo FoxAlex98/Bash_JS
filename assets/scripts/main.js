@@ -1,5 +1,5 @@
 function print_console(){
-    return "<span>root@localhost:</span><input type='text' id='console' onKeyDown='check()'><br>";
+    return "<span>abitante@localvault:</span><input class='upper' type='text' id='console' onKeyDown='check()'><br>";
 }
 
 function print_response(response){
@@ -7,19 +7,12 @@ function print_response(response){
     $(".bash").append("<p>" + response + "</p>");
     $(".bash").append(print_console());
     document.getElementById("console").focus();
-    /*
-    document.getElementById("console").removeAttribute("id");
-    var cons = document.getElementById("bash");
-    cons.insertAdjacentHTML("beforeend" , "<p>" + response + "</p>" + print_console());
-    document.getElementById("console").focus();
-    */
 }
 
 var history;
 
 function clear(){
     $(".bash").html(print_console());
-    $("#")
 }
 
 function controllo(comando){
@@ -33,7 +26,11 @@ function controllo(comando){
                     break;
         case "whoami": print_response("io sono root");
                     break;
-        default:    print_response("comando " + comando + " non trovato"); 
+        case "ciao banana": print_response("si prof, l'ho gestita");
+                    break;
+        case "": print_response("");
+                    break;
+        default:    print_response("comando \"" + comando + "\" non trovato"); 
                     break;
     }
 }

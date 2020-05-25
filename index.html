@@ -7,6 +7,7 @@
     <title>BashJS</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bash_style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/desktop_style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/terminal.css">
 </head>
 
 <body>
@@ -14,9 +15,24 @@
 
         <div class="bash_body">
             <div class="bash_bar">
+                <div class="bash_bar_draggable"></div>
+                <div class="bash_bar_buttons">
+                    
+                    <div class="under">
+                        <img src="assets/img/boy-icon-angry.png" class="icon">
+                    </div>
+                    <div class="square">
+                        <img src="assets/img/boy-icon-big.png" class="icon">
+                    </div>
+                    <div class="cross">
+                        <img src="assets/img/boy-icon-dead.png" class="icon">
+                    </div>
+                    
+                </div>
             </div>
-            <div class="bash">
-                <span>abitante@localvault:</span><input type='text' id='console' onKeyDown='check()'><br>
+            
+            <div class="bash content">
+                <span>abitante@localvault:</span><input class="upper" type='text' id='console' onKeyDown='check()'><br>
             </div>
         </div>
 
