@@ -1,5 +1,5 @@
 function print_console(){
-    return "<span>abitante@localvault:</span><input class='upper' type='text' id='console' onKeyDown='check()'><br>";
+    return "<span>abitante@localvault:</span><input type='text' id='console' onKeyDown='check()'><br>";
 }
 
 function print_response(response){
@@ -13,6 +13,7 @@ var history;
 
 function clear(){
     $(".bash").html(print_console());
+    $("#console").focus();
 }
 
 function controllo(comando){
@@ -26,7 +27,7 @@ function controllo(comando){
                     break;
         case "whoami": print_response("io sono root");
                     break;
-        case "ciao banana": print_response("si prof, l'ho gestita");
+        case "ciao banana": print_response("ciao, sono il tuo amico Pedro");
                     break;
         case "": print_response("");
                     break;
@@ -43,3 +44,6 @@ function check() {
     }   
 }
 
+$(document).ready(function() {
+    console.log( "ready!" );
+});
