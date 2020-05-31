@@ -29,8 +29,8 @@ function attachEventListener(iter) {
 
 $("#terminal").dblclick(function(){
     $(".desktop").append(getBash(bash_number));
+    actual_bash = bash_number;
     attachEventListener(bash_number++);
-    
 });
 
 
