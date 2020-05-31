@@ -41,7 +41,7 @@
     height: 100%;
 }
 
-.minimize, .maximize, .close {
+.close, .maximize, .minimize {
     float: right;
     padding-left: 5%;
     width: 20%;
@@ -60,6 +60,10 @@
 
 p{
     color: lightgreen;
+}
+
+.application_bar p {
+    text-align: center;
 }
 
 input{
