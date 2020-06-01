@@ -17,7 +17,7 @@ function getBash(iter){
         </div>\
     </div>\
     <div class="bash">\
-        <span>abitante@localvault:</span><input type=\'text\' id=\'console\' onKeyDown=\'check()\'><br>\
+        <span>abitante@vault101:</span><input type="text" id="console" onKeyDown="check()"><br>\
     </div>\
 </div>'
 }
@@ -26,4 +26,8 @@ function getBashicon(iter){
     return '<div id="icon_bash' + iter+ '" class="logo_app_bar logo_bash">\
                 <p>' + iter + '</p>\
             </div>' 
+}
+
+function print_console(){
+    return "<span>abitante@vault101:</span><input type='text' id='console' onKeyDown='check()'><br>";
 }

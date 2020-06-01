@@ -1,7 +1,3 @@
-function print_console(){
-    return "<span>abitante@localvault:</span><input type='text' id='console' onKeyDown='check()'><br>";
-}
-
 function print_response(response, idbash){
     $("#" + idbash +" input#console").removeAttr("id");
     $("#" + idbash +" .bash").append("<p>" + response + "</p>");
