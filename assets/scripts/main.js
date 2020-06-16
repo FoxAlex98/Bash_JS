@@ -1,4 +1,5 @@
 function print_response(response, idbash){
+    $("#" + idbash +" input#console").prop("disabled", true);
     $("#" + idbash +" input#console").removeAttr("id");
     $("#" + idbash +" .bash").append("<p>" + response + "</p>");
     $("#" + idbash +" .bash").append(print_console());

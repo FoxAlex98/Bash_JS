@@ -8,7 +8,6 @@ $( function() {
 
 function evidence(iter){
     $(".in_evidence").removeClass("in_evidence");
-    console.log(typeof(iter));
     if(typeof(iter) == "string")
         $("#" + iter).addClass("in_evidence");
     else
@@ -28,10 +27,10 @@ function attachEventListener(iter) {
     });
 
     $(".bash_body").on('click', function(){
-        
         actual_bash = $(this).attr("id");
         $("#" + actual_bash).focus();
         evidence(actual_bash);
+        $("#" + actual_bash +" input#console").focus();
     });
 
     $(".minimize").on('click', function(){
@@ -39,7 +38,7 @@ function attachEventListener(iter) {
     });
 
     $(".maximize").on('click', function(){
-        //$("#" + actual_bash).remove();
+        $("#" + actual_bash).addClass("fullscreen");
     });
 
     $(".close").on('click', function(){
